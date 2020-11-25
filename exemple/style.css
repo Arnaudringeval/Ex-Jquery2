@@ -1,0 +1,25 @@
+#div0 {
+    background-color: #318ce7;
+    width: 150px;
+    height: 150px;
+}
+
+.from-right,
+.from-left {
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.from-right {
+    transform: translate(50px, -30px);
+}
+
+.from-left {
+    transform: translate(-50px, -30px);
+}
+
+#div1 {
+    background-color: #318ce7;
+    width: 150px;
+    height: 150px;
+}
