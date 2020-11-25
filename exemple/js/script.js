@@ -1,20 +1,18 @@
-$(document).ready(function() {
-    $(window).on('scroll', function() {
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200) {
+        $("#menu").addClass("fixed");
+    } else {
+        $("#menu").removeClass("fixed");
+    }
+})
 
-        var elmt = $('.from-left, .from-right');
-        var topImg = $('.from-left, .from-right').offset().top;
-        var scroll = $(window).scrollTop();
 
-        $(elmt).each(function() {
-
-            var topImg = $(this).offset().top - 300;
-
-            if (topImg < scroll) {
-
-                $(this).css("transform", "translate(0,0)");
-                $(this).css("opacity", "1");
-
-            };
-        });
-    });
-});
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200) {
+        $('#div1').animate({
+            marginLeft: '250px'
+        }, 1500)
+    }
+})
