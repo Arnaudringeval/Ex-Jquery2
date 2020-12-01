@@ -1,9 +1,9 @@
 $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
     if (scroll >= 200) {
-        $("#menu").addClass("fixed");
+        $("#top").addClass("fixed");
     } else {
-        $("#menu").removeClass("fixed");
+        $("#top").removeClass("fixed");
     }
 })
 
